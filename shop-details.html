@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Details</title>
+    <!-- TabIcon -->
+    <link rel="shortcut icon" href="./asset/images/logo/Tab Icon.png" type="image/x-icon">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SLICK -->
+    <link rel="stylesheet" href="./asset/vendor/css/slick.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./asset/vendor/css/bootstrap.min.css">
+    <!-- FONTS AWSOME -->
+    <link rel="stylesheet" href="./asset/vendor/css/fonts.all.min.css">
+    <!-- AOS Animation css -->
+    <link rel="stylesheet" href="./asset/vendor/css/aos.css">
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="./asset/css/common.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+</head>
+<body>
+
+   <!-- Preloader Start Here -->
+   <div id="preloader">
+    <div class="preloader-cnt">
+      <img src="./asset/images/Preloader/Preloader (2).gif" alt="">
+    </div>
+  </div>
+  <!-- Preloader End Here -->
+
+   <!-- Back To Top -->
+   <div class="BackToTop">
+    <a href="#" class="backTop-Btn"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+  <!-- Back To Top -->
+  <header id="Header">
+    <div class="container">
+        <div class="row">
+            <div class="header_left d-none d-lg-block col-lg-6">
+                 <h6><a href="#"><img src="./asset/images/Top header/bytesize_send.png" alt=""></a>FREE SHIPING world wide for all orders over <span>$150</span> </h6>
+            </div>
+            <div class="header_right d-none d-lg-block col-lg-6">
+                <div class="row">
+                    <div class="top_headerCnt d-none d-lg-block col-lg-3">
+                        <h6>Track Your Order</h6>
+                    </div>
+                    <div class="top_headerCnt d-none d-lg-block col-lg-3">
+                      <h6><div class='header-faq'>
+                       <input id='faq-d' type='checkbox'>
+                       <label for='faq-d'>
+                         <p class="header-faq-heading">English</p>
+                         <div class='header-faq-arrow'></div>
+                           <p class="header-faq-text">
+                             <ul>
+                               <li><a href="#">German</a></li>
+                               <li><a href="#">French</a></li>
+                               <li><a href="#">Italian</a></li>
+                             </ul>
+                           </p>
+                       </label>
+                     </div></h6>
+                 </div>
+                 <div class="top_headerCnt d-none d-lg-block col-lg-3">
+                     <h6><div class='header-faq'>
+                         <input id='faq-e' type='checkbox'>
+                         <label for='faq-e'>
+                           <p class="header-faq-heading">USD</p>
+                           <div class='header-faq-arrow Usd-Child'></div>
+                             <p class="header-faq-text">
+                               <ul>
+                                 <li><a href="#">BDT</a></li>
+                                 <li><a href="#">EUR</a></li>
+                                 <li><a href="#">USD</a></li>
+                               </ul>
+                             </p>
+                         </label>
+                       </div>
+                     </h6>
+                 </div>
+                    <div class="top_headerCnt-2 d-none d-lg-block col-lg-3" style="padding-left: 20px;">
+                             <div class="row">
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-facebook"></i></a></div>
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-twitter"></i></a></div>
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-instagram"></i></a></div>
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-pinterest"></i></a></div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+
+   <!-- popup SearchBar Starts -->
+   <div class="pop-up" id="SearchOverlay">
+    <div class="popUP-cnt">
+      <form action="">
+        <input type="text" name="" placeholder="Search...">
+        <div class="search-Btn">
+          <a href="#" type="submit">Search</a>
+        </div>
+      </form>
+    </div>
+    <span class="CloseBtn" onclick="closeSearch()"  title="Close"><i class="bi bi-x"></i></span>
+  </div>
+  <!-- popup SearchBar Ends -->
+
+  <!-- navbar section starts -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"><img src="./asset/images/logo/Logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Shop<i class="fa-solid fa-angle-down"></i></a>
+            <!--Shop Submenu list -->
+            <ul id="Submenu">
+               <li><a href="./shop-gird.html">Shop</a></li>
+               <li><a href="./shop-details.html">Shop Details</a></li>
+               <li><a href="./shop-cart.html">Cart Page</a></li>
+               <li><a href="./compare-products.html">Compare</a></li>
+               <li><a href="./wishlist.html">Wishlist</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Pages<i class="fa-solid fa-angle-down"></i></a>
+            <!-- Page Submenu list -->
+            <ul id="Submenu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./shop-gird.html">Shop</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./contract.html">Contract</a></li>
+           </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Blogs<i class="fa-solid fa-angle-down"></i></a>
+             <!-- Blog Submenu list -->
+             <ul id="Submenu">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog Two</a></li>
+              <li><a href="#">Blog Three</a></li>
+              <li><a href="#">Blog Details</a></li>
+           </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./contract.html">Contact</a>
+          </li>
+          </ul>
+          <div class="Icon">
+            <a href="#" class="openbtn" onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></a>  
+            <a href="#"><i class="bi bi-person"></i></a>
+            <a href="#"><i class="bi bi-suit-heart"></i></a>
+            <a href="#"><i class="bi bi-bag"></i><span>0</span></a>
+          </div>
+      </div>
+    </div>
+
+    
+  </nav>
+  <!-- SideBar Section starts -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><a href="./index.html"><img src="./asset/images/logo/Logo.png" alt=""></a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body sidebarfixed scrollbar scrollbar-primary">
+        <div class="force-overflow"></div>
+      <ul>
+        <li><a href="#" class="CntHome"> Home </a></li>
+      </ul>
+      <div class='faq'>
+        <input id='faq-a' type='checkbox'>
+        <label for='faq-a'>
+          <p class="faq-heading">Shop</p>
+          <div class='faq-arrow'></div>
+            <p class="faq-text">
+              <ul>
+                <li><a href="./shop-gird.html">Shop</a></li>
+                <li><a href="./shop-details.html">Shop Details</a></li>
+                <li><a href="./shop-cart.html">Cart Page</a></li>
+                <li><a href="./compare-products.html">Compare</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+              </ul>
+            </p>
+        </label>
+
+        <input id='faq-b' type='checkbox'>
+        <label for='faq-b'>
+          <p class="faq-heading">Pages</p>
+          <div class='faq-arrow'></div>
+            <p class="faq-text">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop-gird.html">Shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contract.html">Contract</a></li>
+              </ul>
+            </p>
+        </label>
+
+        <input id='faq-c' type='checkbox'>
+        <label for='faq-c'>
+          <p class="faq-heading">Blogs</p>
+          <div class='faq-arrow'></div>
+            <p class="faq-text">
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog Two</a></li>
+                <li><a href="#">Blog Three</a></li>
+                <li><a href="#">Blog Details</a></li>
+              </ul>
+            </p>
+        </label>
+      </div>
+      <ul>
+      <li><a href="./about.html" class="CntAbout">About Us</a></li>
+      <li><a href="./contract.html" class="CntCont">Contract</a></li>
+      </ul>
+      <div class="login d-flex">
+        <a href="#"><span><i class="bi bi-person"></i></span> Login / Register</a>
+      </div>
+      <div class="SideBarWishlist d-flex">
+        <a href="./wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist <span>0</span></a>
+      </div>
+    </div>
+  </div>
+ <!--SideBar Section Ends  -->
+  <!-- navbar section ends -->
+
+  <!-- About Banner section starts -->
+    <section id="BannerContent" style="background-image: url(./asset/images/BannerBackgroundImg/Banner-Background-img\ \(3\).png);">
+        <div class="container">
+            <h1>Shop - Details Style One</h1>
+            <p>Home  /  Shop</p>
+        </div>
+    </section>
+  <!-- About Banner Section Starts -->
+
+  <!-- Product Details Page Content Starts -->
+  <section id="product-detaiis">
+    <div class="container product-data">
+        <div class="row">
+            <div class="product-image order-1 col-12 col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+                <div class="mainSlider">
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-1.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-2.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-3.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-4.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-5.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-6.jpg" alt="">
+                    </div>
+                </div>
+                <!-- subSlider -->
+                <div class="SubSlider">
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-1.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-2.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-3.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-4.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-5.jpg" alt="">
+                    </div>
+                    <div class="productMainSlider">
+                        <img src="./asset/images/Shop-Grid/shop-details/shop-details-6.jpg" alt="">
+                    </div>
+                </div>
+                <!-- subSlider -->
+            </div>
+            <div class="details-product order-2 col-12 col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+              <h1>Leather Jackets</h1>
+              <div class="items-reviews col-12 col-sm-12 col-md-8 col-lg-8 col-xl-6">
+                <div class="row">
+                  <div class="reviews-icons col-6 col-sm-4 col-md-4 col-lg-6">
+                    <span>5.00</span>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i> 
+                  </div>
+                  <p class="reviews-count col-6 col-sm-6 col-md-6 col-lg-6">(5 Customer Review)</p>
+                </div>
+              </div>
+
+              <h4>$125.65 <span>$150.65</span></h4>
+              <p class="p">Quickly productivate holistic systems after 24/365 e-commerce. Continually synthesize superior catalysts for change via high standards in leadership skills. Collaboratively evisculate distributed functionalities rather than timely methods of empowerment.</p>
+              <div class="ColorSizeCnt">
+                <div class="row">
+                  <div class="sizeCnt col-1 col-sm-1 col-md-1 col-lg-1">Size:</div>
+                  <div class="Shop-list-cnt col-11 col-sm-11 col-md-11 col-lg-11">
+                    <select class="form-select" aria-label="Default select example">
+                      <option selected><a href="#">Select Size</option>
+                      <option value="1">44</option>
+                      <option value="2">42</option>
+                      <option value="3">40</option>
+                      <option value="4">38</option>
+                    </select>
+                  </div>              
+                </div>
+              </div>
+
+              <br>
+              <div class="row">
+                <div class="sizeCnt col-1 col-sm-1 col-md-1 col-lg-1">Color:</div>
+                <div class="Shop-list-cnt col-11 col-sm-11 col-md-11 col-lg-11">
+                  <select class="form-select" aria-label="Default select example">
+                    <option selected><a href="#">Select Color</option>
+                    <option value="1">Orange</option>
+                    <option value="2">Black</option>
+                    <option value="3">Yellow</option>
+                  </select>
+                </div>              
+              </div>
+              <h2>Quantity:</h2>
+
+              <div class="CartHeartEye-Cnt">
+                <div class="row">
+                  <div class="quantity col-12 col-sm-4 col-md-3 col-lg-5">
+                   <button class="decrementBtn">
+                    <i class="fa-solid fa-minus"></i>
+                  </button> 
+                  <input type="number" class="qutyInput bg-white" disabled value="1" min="1" max="10"> 
+                  <button class="incrementBtn">
+                    <i class="fa-solid fa-plus"></i>
+                  </button>
+                </div>
+                  <a href="./shop-cart.html" class="add-to-cart col-6 col-sm-4 col-md-3 col-lg-3" style="margin-left:-60px;"><i class="fa-solid fa-cart-plus"></i>Add To Cart</a>
+                  <a href="#" class="Fa-heart col-2 col-sm-2 col-md-2 col-lg-1"><i class="fa-solid fa-heart"></i></a>
+                  <a href="#" class="eye-fill col-2 col-sm-2 col-md-2 col-lg-1"><i class="bi bi-eye-fill"></i></a>
+                </div>
+              </div>
+               <div class="row">
+                <div class="details-text-cnt col-12 col-sm-8 col-md-6 col-lg-9 col-xl-6">
+                  <div class="row">
+                    <div class="pro-info col-2">SKU:</div>
+                    <div class="pro-info-cnt col-2" style="margin-left: -5px;"><a href="#" class="W-text">W0243</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="pro-info col-2">Tags:</div>
+                    <div class="pro-info-cnt col-5" style="margin-left: -5px;"><a href="#" class="hot">Hot,</a> <a href="#" class="women">Women</a></div>
+                  </div>
+                  <div class="row">
+                    <div class="pro-info col-4">Category:</div>
+                    <div class="pro-info-cnt col-7" style="margin-left: -20px;"><a href="#" class="dress">Dress,</a> <a href="#" class="t-shirt">T-Shirt,</a> <a href="#" class="mini-scut">Mini Scut</a></div>
+                  </div>
+                </div>
+                <div class="details-social-cnt col-12 col-sm-4 col-md-6 col-lg-3 col-xl-6"> 
+                  <ul class="d-flex list-unstyled mb-0 social">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                  </ul>
+                </div>
+               </div>
+            </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- Product Details Page Content Ends -->
+
+  <!-- Description & Review & Information starts -->
+
+  <section id="Description-Review-Information" data-aos="fade-up" data-aos-duration="2000">
+    <div class="container">
+      <div class="DescriptionReviewInformation">
+        <ul class="nav product-tab-style1" id="productTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <a class="nav-link active " id="description-tab" data-bs-toggle="tab" href="#description" role="tab" aria-controls="description" aria-selected="true">Product Description</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="reviews-tab" data-bs-toggle="tab" href="#reviews" role="tab" aria-controls="reviews" aria-selected="false">Customer Review(1)</a>
+          </li>
+          <li class="nav-item" role="presentation">
+            <a class="nav-link" id="additional-tab" data-bs-toggle="tab" href="#additional" role="tab" aria-controls="additional" aria-selected="false">Additional Information</a>
+          </li>
+        </ul>
+
+        <div class="tab-content mb-30" id="productTabContent">
+          <div class="tab-pane fade active show" id="description" role="tabpanel" aria-labelledby="description-tab">
+                 
+            <p data-aos="fade-up" data-aos-duration="2000">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae mollitia dolores dolore numquam iusto amet, voluptates nihil hic animi, tempore laudantium, alias voluptate aperiam maiores illum. Consequatur exercitationem cupiditate dolorem cum, quas facere fugiat praesentium repellendus distinctio harum! Veritatis tempore, vel eius commodi inventore consequatur incidunt soluta dicta architecto eum odit, a atque dolorem fugiat eaque numquam ut voluptates enim praesentium quam corporis obcaecati, reprehenderit exercitationem eos. Eum et ad asperiores sunt quo error cupiditate laborum, dicta rem! Assumenda fugiat provident facilis corrupti voluptas dicta excepturi est maiores ut reiciendis sed exercitationem, repellendus deleniti, nam architecto adipisci nobis dolores.
+              <br>
+              <br>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit mollitia repellendus magni fuga hic dolore molestias quaerat officia perspiciatis ab cumque quibusdam, dolorum non autem! Animi placeat quibusdam doloribus laborum distinctio veritatis architecto rem provident maiores corrupti, sint possimus at eaque eveniet beatae pariatur. Rerum, veritatis! Alias, quaerat necessitatibus blanditiis quas quia doloremque, beatae quae, nemo dolor deleniti numquam tempora.</p>
+          </div>
+
+          <div class="tab-pane fade" id="reviews" role="tabpanel"    aria-labelledby="reviews-tab">
+            <div class="reviewsCnt" style=" border-bottom: 2px solid #e1e1e17c;" data-aos="fade-up" data-aos-duration="2000">
+              <div class="row">
+                <div class="cnt-reviews order-1 col-12 col-sm-12 col-md-6 col-lg-2">
+                  <div class="customerImagesCnt">
+                    <img src="./asset/images/Shop-Grid/cus-reviews/customer.jpg" alt="">
+                  </div>
+                </div>
+                <div class="cnt-reviews-text order-2 col-12 col-sm-12 col-md-12 col-lg-10" style="margin-left: -90px;">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                    </div>
+                  </div>
+  
+                  <div class="row">
+                    <div class="name-text col-4 col-sm-2 col-md-2 col-lg-2">Mr.Jacks</div>
+                    <div class="date-text col-6 col-sm-3 col-md-3 col-lg-2" style="margin-left: -80px;">1 January, 2024
+                  </div>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt harum ipsum ducimus temporibus earum quisquam exercitationem enim voluptatum nulla totam.</p>
+              </div>
+            </div>
+            </div>
+           <!-- form section starts -->
+           <div id="review-Form" data-aos="fade-up" data-aos-duration="2000">
+             <div class="reviewForm-cnt">
+              <h2>Add a review</h2>
+              <div class="row">
+                <div class="rating col-5 col-sm-3 col-md-2 col-lg-2">Your Rating</div>
+                <div class="reviews-icons col-6 col-sm-6 col-md-6 col-lg-2" style="margin-left: -100px;">
+                 <div class="star">
+                  <a class="bi bi-star-fill"></a>
+                  <a class="bi bi-star-fill"></a>
+                  <a class="bi bi-star-fill"></a>
+                  <a class="bi bi-star-fill"></a>
+                  <a class="bi bi-star-fill"></a>
+                 </div>
+                </div>
+              </div>
+              <div class="input-cnt">
+                <div class="row">
+                  <div class="input1 col-12 col-sm-12 col-md-12 col-lg-6">
+                    <input type="text" placeholder="Your Name:">
+                  </div>
+                  <div class="input2 col-12 col-sm-12 col-md-12 col-lg-6">
+                    <input type="email" placeholder="Your E-mail:">
+                  </div>
+                  <div class="textArea col-12 col-sm-12 col-md-12 col-lg-12">
+                    <textarea type="text" cols="30" rows="5" placeholder="Write a message:"></textarea>
+                  </div>
+                </div>
+              </div>
+              <div class="checkbox col-12">
+                <input id="check" name="check" type="checkbox"> 
+                <label for="check">Save my name, email, and website in this browser for the next time I comment.
+                  <span class="checkmark"></span>
+                </label>
+              </div>
+              <a href="#" class="button">Post review</a>
+             </div>
+          </div>
+          <!-- form section ends -->
+         </div>
+
+       <div class="tab-pane fade" id="additional" role="tabpanel" aria-labelledby="additional-tab">
+        <div class="additional-info" data-aos="fade-up" data-aos-duration="2000">
+          <table style="width: 100%;">
+            <tbody>
+              <tr>
+                <th class="th">Color</th>
+                <td class="td">Yellow, Black, Red</td>
+              </tr>
+              <tr>
+                <th class="th">Size</th>
+                <td class="td">40, 42, 44</td>
+              </tr>
+              <tr>
+                <th class="th">Material</th>
+                <td class="td">Leather</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+</section>
+
+  <!--  Description & Review & Information starts -->
+
+
+  <!-- Releted Products section starts -->
+
+  <section id="Releted-product">
+    <div class="container">
+      <h1>Releted Products</h1>
+      <div class="productSlider" data-aos="fade-up" data-aos-duration="2000">
+        <!-- product 1st -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (1).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <p>New</p>
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Baseball Cap</a>
+              <h6>$125.65</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 2nd -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (2).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <!-- <p>New</p> -->
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Flight jacket</a>
+              <h6>$150.65</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 3rd -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (3).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <p>New</p>
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Shoe Less</a>
+              <h6>$100</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 4th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (4).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <!-- <p>New</p> -->
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Blazer Coat</a>
+              <h6>$350.65</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 5th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (5).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <p>New</p>
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Pink Neck Frog</a>
+              <h6>$170.85</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 6th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (6).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <!-- <p>New</p> -->
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">T-shirt Blouse Sleeve</a>
+              <h6>$120.85</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 7th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (7).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <p>New</p>
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Crew Neck T-shirt</a>
+              <h6>$100.65</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 8th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (8).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <!-- <p>New</p> -->
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Hoodie Sweater</a>
+              <h6>$120</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 9th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (9).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <p>Sale</p>
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Hoodie Outerwear</a>
+              <h6>$120.25</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 10th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (10).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <!-- <p>New</p> -->
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Crew Neck Cotton</a>
+              <h6>$130.65</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 11th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (11).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <p>New</p>
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Plus-size Dress</a>
+              <h6>$120.85</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 12th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (12).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <!-- <p>New</p> -->
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Pajamas Nightwear</a>
+              <h6>$135.65</h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- product 13th -->
+        <div class="slide">
+          <img src="./asset/images/Shop-Grid/product-details/product (13).jpg" alt="">
+          <div class="overlay">
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+            <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+           </div>
+          <p>New</p>
+          <div class="row">
+            <div class="productName col-6">
+              <a href="#">Spaghetti Hoodie</a>
+              <h6>$180.50 <span style="text-decoration: line-through; font-size:16px; font-family:var(--primary-Font); color:#BDBDBD;">$350.99</span></h6>
+            </div>
+            <div class="items-reviews col-6">
+              <div class="row">
+                <div class="reviews-icons">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span>(5)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Releted Products section ends -->
+
+     
+    <!-- Shop-Detials footer section Starts -->
+    <footer id="aboutFooter">
+      <!-- footer top -->
+      <div class="container">
+         <div class="footerTop" >
+          <div class="row">
+            <div class="Abtop-footerCnt1 col-12 col-lg-5">
+              <h2>Subscribe to Our Newsletter!</h2>
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+            </div>
+            <div class="Abtop-footerCnt2 col-12 col-lg-6">
+              <form action="">
+                <div class="btn-group">
+                  <input type="email" placeholder="Enter your email....">
+                  <button>Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+         </div>
+      </div>
+      <!--  footer top ends -->
+      <!-- footer center starts -->
+      <div id="ftCenter">
+        <div class="container">
+          <div class="row">
+            <div class="centerFooterCnt1 col-12 col-sm-7 col-md-4  col-lg-3">
+              <div class="ft-logo"><img src="./asset/images/logo/Logo.png" alt=""></div>
+              <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+               <div class="ft-social-icon">
+                <div class="row">
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-facebook"></i></a></div>
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-twitter"></i></a></div>
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-instagram"></i></a></div>
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-pinterest"></i></a></div>
+                </div>
+               </div>
+            </div>
+            <div class="centerFooterCnt col-12 col-sm-5 col-md-4 col-lg-2">
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>My Account</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>View Cart</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Wishlist</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Compare</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>New Products</a></li>
+              </ul>
+            </div>
+            <div class="centerFooterCnt col-12 col-sm-7 col-md-4 col-lg-2">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Help</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Contact Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Feedback</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Customer Service</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Store Locations</a></li>
+              </ul>
+            </div>
+            <div class="centerFooterCnt col-12 col-sm-5 col-md-4 col-lg-2">
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Men’s Shopping</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Women’s Shopping</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Kids’ Shopping</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Discounts</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>New Arrivels</a></li>
+              </ul>
+            </div>
+            <div class="centerFooterCnt2 col-12 col-sm-6 col-md-4 col-lg-3">
+              <h3>Contact Us</h3>
+              <table class="ContractUs_cnt" style="width: 100%;">
+                <tr>
+                  <td style="width: 10px;"><img src="./asset/images/Contract Us img/location_on.png" alt="" style="margin-top:-23px"></td>
+                  <td>2751 S Parker Rd, Aurora, CO 80014, 
+                    United States</td>
+                </tr>
+
+                <tr>
+                  <td style="width: 10px;"><img src="./asset/images/Contract Us img/call.png" alt="" style="margin-top: -10px;"></td>
+                  <td><a href="tel:+18008660286">+18008660286</a></td>
+                </tr>
+
+                <tr>
+                  <td style="width: 10px;"><img src="./asset/images/Contract Us img/email.png" alt="" style="margin-top: -23px;"></td>
+                  <td><a href="mailto:webmaster@example.com">
+                    aetor.info@gmail.com
+                    <br>
+                    info@aetor.com
+                  </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Shop-Detials footer center ends --> 
+      <!-- underfooter section starts -->
+      <section id="Abunderfooter">
+      <div class="container">
+        <div class="row">
+          <div class="under-Ft col-12 col-sm-12 col-md-12 col-lg-6">
+            <p>© 2022 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft.</span></p>
+          </div>
+          <div class="under-Ft2 d-none d-lg-block col-sm-12 col-md-12 col-12 col-lg-6">
+            <div class="row">
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (3).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (2).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (5).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (4).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (1).png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- underfooter section ends -->
+    </footer>
+   
+    <!-- Shop_Details footer section Ends -->
+    
+     <!-- Jquery  -->
+     <script src="./asset/vendor/js/jquery-3.7.1.min.js"></script>
+     <!-- BOOTSTRAP -->
+     <script src="./asset/vendor/js/bootstrap.min.js"></script>
+     <!-- BOOTSTRAP TOOLTRIPS JS -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+     <!-- SLIK JS -->
+     <script src="./asset/vendor/js/slick.min.js"></script>
+     <!-- AOS JS -->
+     <script src="./asset/vendor/js/aos.js"></script>
+     <!-- ICONIFY -->
+     <script src="./asset/vendor/js/iconify.min.js"></script>
+     <!-- MAIN JS -->
+     <script src="./asset/js/app.js"></script>
+ </body>
+ 
+ </html>

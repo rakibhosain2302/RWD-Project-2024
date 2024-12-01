@@ -1,0 +1,1369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop-Gird</title>
+    <!-- TabIcon -->
+    <link rel="shortcut icon" href="./asset/images/logo/Tab Icon.png" type="image/x-icon">
+    <!-- CND -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- SLICK -->
+    <link rel="stylesheet" href="./asset/vendor/css/slick.min.css">
+    <!-- BOOTSTRAP -->
+    <link rel="stylesheet" href="./asset/vendor/css/bootstrap.min.css">
+    <!-- FONTS AWSOME -->
+    <link rel="stylesheet" href="./asset/vendor/css/fonts.all.min.css">
+    <!-- AOS Animation css -->
+    <link rel="stylesheet" href="./asset/vendor/css/aos.css">
+    <!-- COMMON CSS -->
+    <link rel="stylesheet" href="./asset/css/common.css">
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <!-- RESPONSIVE -->
+    <link rel="stylesheet" href="./asset/css/responsive.css">
+</head>
+<body>
+
+   <!-- Preloader Start Here -->
+   <div id="preloader">
+    <div class="preloader-cnt">
+      <img src="./asset/images/Preloader/Preloader (2).gif" alt="">
+    </div>
+  </div>
+  <!-- Preloader End Here -->
+
+   <!-- Back To Top -->
+   <div class="BackToTop">
+    <a href="#" class="backTop-Btn"><i class="bi bi-arrow-up-short"></i></a>
+  </div>
+  <!-- Back To Top -->
+  <header id="Header">
+    <div class="container">
+        <div class="row">
+            <div class="header_left d-none d-lg-block col-lg-6">
+                 <h6><a href="#"><img src="./asset/images/Top header/bytesize_send.png" alt=""></a>FREE SHIPING world wide for all orders over <span>$150</span> </h6>
+            </div>
+            <div class="header_right d-none d-lg-block col-lg-6">
+                <div class="row">
+                    <div class="top_headerCnt d-none d-lg-block col-lg-3">
+                        <h6>Track Your Order</h6>
+                    </div>
+                    <div class="top_headerCnt d-none d-lg-block col-lg-3">
+                      <h6><div class='header-faq'>
+                       <input id='faq-d' type='checkbox'>
+                       <label for='faq-d'>
+                         <p class="header-faq-heading">English</p>
+                         <div class='header-faq-arrow'></div>
+                           <p class="header-faq-text">
+                             <ul>
+                               <li><a href="#">German</a></li>
+                               <li><a href="#">French</a></li>
+                               <li><a href="#">Italian</a></li>
+                             </ul>
+                           </p>
+                       </label>
+                     </div></h6>
+                 </div>
+                 <div class="top_headerCnt d-none d-lg-block col-lg-3">
+                     <h6><div class='header-faq'>
+                         <input id='faq-e' type='checkbox'>
+                         <label for='faq-e'>
+                           <p class="header-faq-heading">USD</p>
+                           <div class='header-faq-arrow Usd-Child'></div>
+                             <p class="header-faq-text">
+                               <ul>
+                                 <li><a href="#">BDT</a></li>
+                                 <li><a href="#">EUR</a></li>
+                                 <li><a href="#">USD</a></li>
+                               </ul>
+                             </p>
+                         </label>
+                       </div>
+                     </h6>
+                 </div>
+                    <div class="top_headerCnt-2 d-none d-lg-block col-lg-3" style="padding-left: 20px;">
+                             <div class="row">
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-facebook"></i></a></div>
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-twitter"></i></a></div>
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-instagram"></i></a></div>
+                                <div class="header_socialIcon co-2 col-lg-3"><a href="#"><i class="bi bi-pinterest"></i></a></div>
+                             </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+  </header>
+
+   <!-- popup SearchBar Starts -->
+   <div class="pop-up" id="SearchOverlay">
+    <div class="popUP-cnt">
+      <form action="">
+        <input type="text" name="" placeholder="Search...">
+        <div class="search-Btn">
+          <a href="#" type="submit">Search</a>
+        </div>
+      </form>
+    </div>
+    <span class="CloseBtn" onclick="closeSearch()"  title="Close"><i class="bi bi-x"></i></span>
+  </div>
+  <!-- popup SearchBar Ends -->
+  <!-- navbar section starts -->
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html"><img src="./asset/images/logo/Logo.png" alt=""></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+        <span class="navbar-toggler-icon"><i class="fa-solid fa-bars"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Shop<i class="fa-solid fa-angle-down"></i></a>
+            <!--Shop Submenu list -->
+            <ul id="Submenu">
+               <li><a href="./shop-gird.html">Shop</a></li>
+               <li><a href="./shop-details.html">Shop Details</a></li>
+               <li><a href="./shop-cart.html">Cart Page</a></li>
+               <li><a href="./compare-products.html">Compare</a></li>
+               <li><a href="./wishlist.html">Wishlist</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Pages<i class="fa-solid fa-angle-down"></i></a>
+            <!-- Page Submenu list -->
+            <ul id="Submenu">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./shop-gird.html">Shop</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="./contract.html">Contract</a></li>
+           </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="#">Blogs<i class="fa-solid fa-angle-down"></i></a>
+             <!-- Blog Submenu list -->
+             <ul id="Submenu">
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Blog Two</a></li>
+              <li><a href="#">Blog Three</a></li>
+              <li><a href="#">Blog Details</a></li>
+           </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./about.html">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="./contract.html">Contact</a>
+          </li>
+          </ul>
+          <div class="Icon">
+            <a href="#" class="openbtn" onclick="openSearch()"><i class="fa-solid fa-magnifying-glass"></i></a>  
+            <a href="#"><i class="bi bi-person"></i></a>
+            <a href="#"><i class="bi bi-suit-heart"></i></a>
+            <a href="#"><i class="bi bi-bag"></i><span>0</span></a>
+          </div>
+      </div>
+    </div>
+
+   
+  </nav>
+  <!-- SideBar Section starts -->
+  <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><a href="./index.html"><img src="./asset/images/logo/Logo.png" alt=""></a></h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body sidebarfixed scrollbar scrollbar-primary">
+        <div class="force-overflow"></div>
+      <ul>
+        <li><a href="./index.html" class="CntHome"> Home </a></li>
+      </ul>
+      <div class='faq'>
+        <input id='faq-a' type='checkbox'>
+        <label for='faq-a'>
+          <p class="faq-heading">Shop</p>
+          <div class='faq-arrow'></div>
+            <p class="faq-text">
+              <ul>
+                <li><a href="./shop-gird.html">Shop</a></li>
+                <li><a href="./shop-details.html">Shop Details</a></li>
+                <li><a href="./shop-cart.html">Cart Page</a></li>
+                <li><a href="./compare-products.html">Compare</a></li>
+                <li><a href="./wishlist.html">Wishlist</a></li>
+              </ul>
+            </p>
+        </label>
+
+        <input id='faq-b' type='checkbox'>
+        <label for='faq-b'>
+          <p class="faq-heading">Pages</p>
+          <div class='faq-arrow'></div>
+            <p class="faq-text">
+              <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./shop-gird.html">Shop</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="./contract.html">Contract</a></li>
+              </ul>
+            </p>
+        </label>
+
+        <input id='faq-c' type='checkbox'>
+        <label for='faq-c'>
+          <p class="faq-heading">Blogs</p>
+          <div class='faq-arrow'></div>
+            <p class="faq-text">
+              <ul>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Blog Two</a></li>
+                <li><a href="#">Blog Three</a></li>
+                <li><a href="#">Blog Details</a></li>
+              </ul>
+            </p>
+        </label>
+      </div>
+      <ul>
+      <li><a href="./about.html" class="CntAbout">About Us</a></li>
+      <li><a href="./contract.html" class="CntCont">Contract</a></li>
+      </ul>
+      <div class="login d-flex">
+        <a href="#"><span><i class="bi bi-person"></i></span> Login / Register</a>
+      </div>
+      <div class="SideBarWishlist d-flex">
+        <a href="./wishlist.html"><i class="fa-regular fa-heart"></i> Wishlist <span>0</span></a>
+      </div>
+    </div>
+  </div>
+ <!--SideBar Section Ends  -->
+  <!-- navbar section ends -->
+
+  <!-- About Banner section starts -->
+    <section id="BannerContent" style="background-image: url(./asset/images/BannerBackgroundImg/Banner-Background-img\ \(4\).png);">
+        <div class="container">
+            <h1>Shop - Grid</h1>
+            <p>Home  /  Shop</p>
+        </div>
+    </section>
+  <!-- About Banner Section Starts -->
+
+  <section id="shop-gird-cnt">
+    <div class="container">
+       <div class="row">
+          <div class="Shop-girdCnt col-6 col-sm-4 col-md-3 col-lg-2">
+          <ul class="nav product-tab-style1" id="productTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a class="nav-link active" id="list-tab" data-bs-toggle="tab" href="#list" role="tab" aria-controls="list" aria-selected="true"><i class="fa-solid fa-list"></i></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a class="nav-link" id="items-tab" data-bs-toggle="tab" href="#items" role="tab" aria-controls="items" aria-selected="false"><i class="fa-solid fa-table-cells"></i></a>
+            </li>
+          </ul>
+          </div>
+
+          <div class="shop-progress-bar col-6 col-sm-4 col-md-4 col-lg-4" style="margin-left:-80px; padding-top:10px;">
+            <p>Showing 12 of 16 Post</p>
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                <div class="progress-bar"></div>
+              </div>
+        </div>
+
+        <div class="Shop-list-cnt col-7 col-sm-4 col-md-6 col-lg-6" style="margin-left:80px; padding-top:10px;">
+          <select class="form-select" aria-label="Default select example">
+            <option selected><a href="#">Default sorting</option>
+            <option>Sort by Latest</option>
+            <option>Sort by Oldest</option>
+            <option>Sort by Ascending</option>
+            <option>Sort by Descending</option>
+          </select>
+        </div>
+  
+        </div>
+
+        
+        <div class="tab-content mb-30" id="productTabContent">
+          <div class="tab-pane fade active show" id="list" role="tabpanel" aria-labelledby="list-tab">
+  <!-- shop product card starts -->
+    <section id="Shop-product-card">
+        <!-- card 1 -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6  col-lg-4">
+              <h6 class="product-discnt">-45%</h6>
+               <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (1).png" alt=""></a>
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Spaghetti Hoodie</a>
+              <h4>$180.85 <span class="dis-cunt">$350.99</span></h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <!-- card 2 -->
+        <div class="product-card " data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-8">
+              <h6 class="product-discnt">New</h6>
+               <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (2).png" alt="" style="margin-left: 25px;  ">
+               </a>              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Hoodie Outerwear</a>
+              <h4>$120.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       <!-- card 3 -->
+        <div class="product-card " data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <!-- <h6 class="product-discnt">-45%</h6> -->
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (3).png" alt="" style="padding-left: 30px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Pink Neck Frog</a>
+              <h4>$170.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 4 -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <h6 class="product-discnt">New</h6>
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (4).png" alt="" style="padding-left: 70px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Crew Neck Cotton</a>
+              <h4>$190.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 5 -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <h6 class="product-discnt">Sale</h6>
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (5).png" alt="" style="margin-left: 40px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Spaghetti Strap</a>
+              <h4>$160.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 6 -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <h6 class="product-discnt">New</h6>
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (6).png" alt="" style="margin-left: 35px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">T-shirt Blouse Sleeve</a>
+              <h4>$120.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 7 -->
+        <div class="product-card " data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <h6 class="product-discnt">Sale</h6>
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (7).png" alt="" style="margin-left: 20px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Blouse Jacket</a>
+              <h4>$120.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 8 -->
+        <div class="product-card " data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <!-- <h6 class="product-discnt">-45%</h6> -->
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (8).png" alt="" style="margin-left: 35px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Pajamas Nightwear</a>
+              <h4>$100.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 9 -->
+        <div class="product-card " data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <h6 class="product-discnt">New</h6>
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (9).png" alt="" style="margin-left: 50px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Hoodie Sweater</a>
+              <h4>$100.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 10 -->
+        <div class="product-card " data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <!-- <h6 class="product-discnt">-45%</h6> -->
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (10).png" alt="" style="margin-left: 35px; margin-top:-20px"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Crew Neck T-shirt</a>
+              <h4>$130.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 11 -->
+        <div class="product-card " data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <h6 class="product-discnt">Sale</h6>
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (11).png" alt="" style="margin-left: 45px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Flight jacket</a>
+              <h4>$110.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+<!-- card 12 -->
+        <div class="product-card" data-aos="fade-up" data-aos-duration="2000">
+          <div class="row">
+            <div class="product-imgs col-12 col-sm-12 col-md-6 col-lg-4">
+              <h6 class="product-discnt">Sale</h6>
+              <a href="./shop-details.html"><img src="./asset/images/Shop-Grid/shop product/product (12).png" alt="" style="margin-left: 15px;"></a>
+              
+            </div>
+
+            <div class="product-details col-12 col-sm-12 col-md-6 col-lg-8">
+              <a href="./shop-details.html">Plus-size Dress</a>
+              <h4>$125.85</h4>
+              <div class="reviews">
+                <div class="row">
+                  <div class="reviews-icon">
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                    <i class="bi bi-star-fill"></i>
+                  </div>
+        
+                  <p>Quickly engage backward-compatible core competencies rather than cross-platform synergy. Intrinsicly disseminate alternative infomediaries through next-generation internal or "organic" sources. Authoritatively procrastinate mission-critical catalysts for change through tactical manufactured products. Credibly target 24/365 niche</p>
+                  <div class="reviews-icon-content">
+                    <div class="row">
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -14px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Cart"><i class="fa-solid fa-cart-plus"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                      <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Add to Wishlist"><i class="fa-regular fa-heart"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Quick View"><i class="fa-regular fa-eye"></i></a>
+                      </div>
+                      <div class="icon-cnt col-2 col-sm-1 col-md-1 col-lg-1" style="margin-left: -15px;">
+                        <a href="#" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- shop product card ends -->
+
+    <!-- pagination section starts -->
+    <section id="pagination">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item ">
+            <a class="page-link" href="#">
+            <i class="bi bi-arrow-left"></i> Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next <i class="bi bi-arrow-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section>
+    <!-- pagination section Ends -->
+
+   <!-- shop gird section ends -->
+</div>
+
+<div class="tab-pane fade" id="items" role="tabpanel"    aria-labelledby="items-tab">
+      <section id="shop-gird">
+        <div class="row">
+          <!-- 1st product  -->
+          <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <p class="product-discnt">New</p>
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (1).png" alt=""></a>
+               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+              
+              <div class="row">
+                <div class="items-name col-7 col-sm-7 col-md-7  col-lg-7"><a href="./shop-details.html">Spaghetti Hoodie</a>
+                <h5>$125.6</h5>
+                </div>
+                <div class="items-reviews col-5 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+              </div>
+
+           <!-- 2nd product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (4).png" alt=""></a>
+               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Crew Neck Cotton</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$150.65</h5>
+          </div>
+
+           <!-- 3rd product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <p class="product-discnt">New</p>
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (5).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Spaghetti Strap Dress</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$125.65</h5>
+            </div>
+
+           <!-- 4th product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (2).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Pink Neck Frog</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$330.65</h5>
+            </div>
+
+          <!-- 5th product  -->
+          <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <p class="product-discnt">New</p>
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (10).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">T-shirt Blouse Sleeve</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$125.65</h5>
+            </div>
+
+           <!-- 6th product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (11).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Crew Neck T-shirt</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$150.65</h5>
+            </div>
+
+           <!-- 7th product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <p class="product-discnt">New</p>
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (12).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Blouse Jacket</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$125.65</h5>
+            </div>
+
+           <!-- 8th product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (3).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Hoodie Sweater Bluza</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$130.65</h5>
+            </div>
+
+
+          <!-- 9th product  -->
+          <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <p class="product-discnt">New</p>
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (6).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Hoodie Coat Outerwear</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$125.65</h5>
+            </div>
+
+           <!-- 10th product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product"> 
+              <!-- <p class="sale">-45%</p> -->
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (7).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+                <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Flight jacket</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$125.65</h5>
+            </div>
+
+           <!-- 11th product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product">
+              <p class="product-discnt">New</p>
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (8).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Shoulder Dress</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$125.65</h5>
+            </div>
+
+           <!-- 12th product  -->
+           <div class="shop-girdCnt col-12 col-sm-6 col-md-6 col-lg-3" data-aos="fade-up" data-aos-duration="2000">
+            <div class="Shop-gird-product"> 
+              <!-- <p class="prod-discnt">-45%</p> -->
+              <a href="./shop-details.html"><img class="img" src="./asset/images/Shop-Grid/shop product/product (9).png" alt=""></a>               <div class="overlay">
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Cart"><i class="bi bi-cart-plus"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Add to Wishlist"><i class="bi bi-heart-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Quick View"><i class="bi bi-eye-fill"></i></a>
+                <a href="#" class="Boder" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-title="Compare"><i class="bi bi-reception-4"></i></a>
+               </div>
+              </div>
+               <div class="row">
+                <div class="items-name col-6 col-sm-7 col-md-7 col-lg-7"><a href="./shop-details.html">Pajamas Nightwear</a></div>
+                <div class="items-reviews col-6 col-sm-5 col-md-5 col-lg-5">
+                  <div class="row">
+                    <div class="reviews-icons">
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                      <i class="bi bi-star-fill"></i>
+                       <span>(5)</span>
+                    </div>
+                  </div>
+                </div>
+               </div>
+               <h5>$125.65</h5>
+            </div>
+
+
+
+        </div> 
+    </section>
+    <!-- shop-grid product card ends -->
+
+    <!-- pagination section starts -->
+     <section id="pagination">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item ">
+            <a class="page-link" href="#">
+            <i class="bi bi-arrow-left"></i> Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next <i class="bi bi-arrow-right"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </section> 
+    <!-- pagination section Ends -->
+
+   <!-- shop gird section ends -->
+    </div>
+      
+    </div>
+  </div>
+</section>
+
+   
+    <!-- about footer section Starts -->
+    <footer id="aboutFooter">
+      <!-- about footer top -->
+      <div class="container">
+         <div class="footerTop">
+          <div class="row">
+            <div class="Abtop-footerCnt1 col-12 col-lg-5" >
+              <h2>Subscribe to Our Newsletter!</h2>
+              <p>Authoritatively morph 24/7 potentialities with error-free partnerships. Objectively engineer multimedia.</p>
+            </div>
+            <div class="Abtop-footerCnt2 col-12 col-lg-6">
+              <form action="">
+                <div class="btn-group">
+                  <input type="email" placeholder="Enter your email....">
+                  <button>Subscribe</button>
+                </div>
+              </form>
+            </div>
+          </div>
+         </div>
+      </div>
+      <!-- about footer top ends -->
+      <!-- about footer center starts -->
+      <div id="ftCenter">
+        <div class="container">
+          <div class="row">
+            <div class="centerFooterCnt1 col-12 col-sm-7 col-md-4  col-lg-3">
+              <div class="ft-logo"><img src="./asset/images/logo/Logo.png" alt=""></div>
+              <p>Progressively optimize effective ideas before turnkey process improvements. Proactively disseminate</p>
+               <div class="ft-social-icon">
+                <div class="row">
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-facebook"></i></a></div>
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-twitter"></i></a></div>
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-instagram"></i></a></div>
+                  <div class="ft-icon1 col-2"><a href="#"><i class="bi bi-pinterest"></i></a></div>
+                </div>
+               </div>
+            </div>
+            <div class="centerFooterCnt col-12 col-sm-5 col-md-4 col-lg-2">
+              <h3>My Account</h3>
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>My Account</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>View Cart</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Wishlist</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Compare</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>New Products</a></li>
+              </ul>
+            </div>
+            <div class="centerFooterCnt col-12 col-sm-7 col-md-4 col-lg-2">
+              <h3>Support</h3>
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Help</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Contact Us</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Feedback</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Customer Service</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Store Locations</a></li>
+              </ul>
+            </div>
+            <div class="centerFooterCnt col-12 col-sm-5 col-md-4 col-lg-2">
+              <h3>Shop</h3>
+              <ul>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Men’s Shopping</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Women’s Shopping</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Kids’ Shopping</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>Discounts</a></li>
+                <li><a href="#"><i class="fa-solid fa-angle-right"></i>New Arrivels</a></li>
+              </ul>
+            </div>
+            <div class="centerFooterCnt2 col-12 col-sm-6 col-md-4 col-lg-3">
+              <h3>Contact Us</h3>
+              <table class="ContractUs_cnt" style="width: 100%;">
+                <tr>
+                  <td style="width: 10px;"><img src="./asset/images/Contract Us img/location_on.png" alt="" style="margin-top:-23px"></td>
+                  <td>2751 S Parker Rd, Aurora, CO 80014, 
+                    United States</td>
+                </tr>
+
+                <tr>
+                  <td style="width: 10px;"><img src="./asset/images/Contract Us img/call.png" alt="" style="margin-top: -10px;"></td>
+                  <td><a href="tel:+18008660286">+18008660286</a></td>
+                </tr>
+
+                <tr>
+                  <td style="width: 10px;"><img src="./asset/images/Contract Us img/email.png" alt="" style="margin-top: -23px;"></td>
+                  <td><a href="mailto:webmaster@example.com">
+                    aetor.info@gmail.com
+                    <br>
+                    info@aetor.com
+                  </a>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about footer center ends --> 
+      <!-- underfooter section starts -->
+      <section id="Abunderfooter">
+      <div class="container">
+        <div class="row">
+          <div class="under-Ft col-12 col-sm-12 col-md-12 col-lg-6">
+            <p>© 2022 All Rights Reserved <span>Aytor</span> By <span>Angfuzsoft.</span></p>
+          </div>
+          <div class="under-Ft2 d-none d-lg-block col-sm-12 col-md-12 col-12 col-lg-6">
+            <div class="row">
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (3).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (2).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (5).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (4).png" alt=""></a>
+              <a href="#" class="paymentIcon-Cnt col-2 col-md-2 col-lg-2"><img src="./asset/images/Payment Card img/card (1).png" alt=""></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- underfooter section ends -->
+    </footer>
+   
+    <!-- about footer section Ends -->
+   
+    
+     <!-- Jquery  -->
+     <script src="./asset/vendor/js/jquery-3.7.1.min.js"></script>
+     <!-- BOOTSTRAP -->
+     <script src="./asset/vendor/js/bootstrap.min.js"></script>
+     <!-- BOOTSTRAP TOOLTRIPS JS -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+     <!-- SLIK JS -->
+     <script src="./asset/vendor/js/slick.min.js"></script>
+     <!-- AOS JS -->
+     <script src="./asset/vendor/js/aos.js"></script>
+     <!-- ICONIFY -->
+     <script src="./asset/vendor/js/iconify.min.js"></script>
+     <!-- MAIN JS -->
+     <script src="./asset/js/app.js"></script>
+ </body>
+ 
+ </html>
