@@ -257,7 +257,7 @@
   <section id="product-detaiis">
     <div class="container product-data">
         <div class="row">
-            <div class="product-image order-1 col-12 col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+            <div class="product-image order-1 col-12 col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="1500">
                 <div class="mainSlider">
                     <div class="productMainSlider">
                         <img src="./asset/images/Shop-Grid/shop-details/shop-details-1.jpg" alt="">
@@ -301,7 +301,7 @@
                 </div>
                 <!-- subSlider -->
             </div>
-            <div class="details-product order-2 col-12 col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="2000">
+            <div class="details-product order-2 col-12 col-sm-12 col-md-12 col-lg-6" data-aos="fade-up" data-aos-duration="1500">
               <h1>Leather Jackets</h1>
               <div class="items-reviews col-12 col-sm-12 col-md-8 col-lg-8 col-xl-6">
                 <div class="row">
@@ -319,51 +319,64 @@
 
               <h4>$125.65 <span>$150.65</span></h4>
               <p class="p">Quickly productivate holistic systems after 24/365 e-commerce. Continually synthesize superior catalysts for change via high standards in leadership skills. Collaboratively evisculate distributed functionalities rather than timely methods of empowerment.</p>
-              <div class="ColorSizeCnt">
-                <div class="row">
-                  <div class="sizeCnt col-1 col-sm-1 col-md-1 col-lg-1">Size:</div>
+              
+
+              <form class="fCnt">
+                <div class="row mt-5">
+                  <label for="color" class="sizeCnt col-1 col-sm-1 col-md-1 col-lg-1 col-form-label">Color:</label>
                   <div class="Shop-list-cnt col-11 col-sm-11 col-md-11 col-lg-11">
                     <select class="form-select" aria-label="Default select example">
-                      <option selected><a href="#">Select Size</option>
-                      <option value="1">44</option>
-                      <option value="2">42</option>
-                      <option value="3">40</option>
-                      <option value="4">38</option>
-                    </select>
-                  </div>              
+                      <option selected>Select Color</option>
+                        <option value="1">Orange</option>
+                        <option value="2">Black</option>
+                        <option value="3">Yellow</option>
+                      </select>
+                    </div> 
                 </div>
-              </div>
-
-              <br>
-              <div class="row">
-                <div class="sizeCnt col-1 col-sm-1 col-md-1 col-lg-1">Color:</div>
-                <div class="Shop-list-cnt col-11 col-sm-11 col-md-11 col-lg-11">
-                  <select class="form-select" aria-label="Default select example">
-                    <option selected><a href="#">Select Color</option>
-                    <option value="1">Orange</option>
-                    <option value="2">Black</option>
-                    <option value="3">Yellow</option>
-                  </select>
-                </div>              
-              </div>
-              <h2>Quantity:</h2>
-
+                <div class="ColorSizeCnt">
+                  <div class="row">
+                    <div class="sizeCnt col-1 col-sm-1 col-md-1 col-lg-1">Size:</div>
+                    <div class="Shop-list-cnt col-11 col-sm-11 col-md-11 col-lg-11">
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected><a href="#">Select Size</option>
+                        <option value="1">44</option>
+                        <option value="2">42</option>
+                        <option value="3">40</option>
+                        <option value="4">38</option>
+                      </select>
+                    </div>              
+                  </div>
+                </div>
+              </form>
+                <div class="quty">
+                  <h2>Quantity:</h2>
+                </div>
               <div class="CartHeartEye-Cnt">
-                <div class="row">
-                  <div class="quantity col-12 col-sm-4 col-md-3 col-lg-5">
-                   <button class="decrementBtn">
-                    <i class="fa-solid fa-minus"></i>
-                  </button> 
-                  <input type="number" class="qutyInput bg-white" disabled value="1" min="1" max="10"> 
-                  <button class="incrementBtn">
-                    <i class="fa-solid fa-plus"></i>
-                  </button>
+                <div class="row align-items-center">
+                    <div class="quantity col-6 col-sm-4 col-md-3 col-lg-4 d-flex align-items-center">
+                        <a class="decrementBtn">
+                            <i class="fa-solid fa-minus"></i>
+                        </a> 
+                        <input type="number" class="qutyInput bg-white text-center" disabled value="0" min="1" max="10" readonly> 
+                        <a class="incrementBtn">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+
+                    <div class="quanti-right col-6 col-sm-8 col-md-9 col-lg-8 d-flex align-items-center justify-content-end">
+                        <a href="./shop-cart.html" class="add-to-cart btn btn-primary me-2">
+                            <i class="fa-solid fa-cart-plus"></i> Add To Cart
+                        </a>
+                        <a href="#" class="Fa-heart btn btn-outline-danger me-2">
+                            <i class="fa-solid fa-heart"></i>
+                        </a>
+                        <a href="#" class="eye-fill btn btn-outline-secondary">
+                            <i class="bi bi-eye-fill"></i>
+                        </a>
+                    </div>
                 </div>
-                  <a href="./shop-cart.html" class="add-to-cart col-6 col-sm-4 col-md-3 col-lg-3" style="margin-left:-60px;"><i class="fa-solid fa-cart-plus"></i>Add To Cart</a>
-                  <a href="#" class="Fa-heart col-2 col-sm-2 col-md-2 col-lg-1"><i class="fa-solid fa-heart"></i></a>
-                  <a href="#" class="eye-fill col-2 col-sm-2 col-md-2 col-lg-1"><i class="bi bi-eye-fill"></i></a>
-                </div>
-              </div>
+            </div>
+            
                <div class="row">
                 <div class="details-text-cnt col-12 col-sm-8 col-md-6 col-lg-9 col-xl-6">
                   <div class="row">
@@ -397,7 +410,7 @@
 
   <!-- Description & Review & Information starts -->
 
-  <section id="Description-Review-Information" data-aos="fade-up" data-aos-duration="2000">
+  <section id="Description-Review-Information" data-aos="fade-up" data-aos-duration="1500">
     <div class="container">
       <div class="DescriptionReviewInformation">
         <ul class="nav product-tab-style1" id="productTab" role="tablist">
@@ -415,14 +428,14 @@
         <div class="tab-content mb-30" id="productTabContent">
           <div class="tab-pane fade active show" id="description" role="tabpanel" aria-labelledby="description-tab">
                  
-            <p data-aos="fade-up" data-aos-duration="2000">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae mollitia dolores dolore numquam iusto amet, voluptates nihil hic animi, tempore laudantium, alias voluptate aperiam maiores illum. Consequatur exercitationem cupiditate dolorem cum, quas facere fugiat praesentium repellendus distinctio harum! Veritatis tempore, vel eius commodi inventore consequatur incidunt soluta dicta architecto eum odit, a atque dolorem fugiat eaque numquam ut voluptates enim praesentium quam corporis obcaecati, reprehenderit exercitationem eos. Eum et ad asperiores sunt quo error cupiditate laborum, dicta rem! Assumenda fugiat provident facilis corrupti voluptas dicta excepturi est maiores ut reiciendis sed exercitationem, repellendus deleniti, nam architecto adipisci nobis dolores.
+            <p data-aos="fade-up" data-aos-duration="1500">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam repudiandae mollitia dolores dolore numquam iusto amet, voluptates nihil hic animi, tempore laudantium, alias voluptate aperiam maiores illum. Consequatur exercitationem cupiditate dolorem cum, quas facere fugiat praesentium repellendus distinctio harum! Veritatis tempore, vel eius commodi inventore consequatur incidunt soluta dicta architecto eum odit, a atque dolorem fugiat eaque numquam ut voluptates enim praesentium quam corporis obcaecati, reprehenderit exercitationem eos. Eum et ad asperiores sunt quo error cupiditate laborum, dicta rem! Assumenda fugiat provident facilis corrupti voluptas dicta excepturi est maiores ut reiciendis sed exercitationem, repellendus deleniti, nam architecto adipisci nobis dolores.
               <br>
               <br>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit mollitia repellendus magni fuga hic dolore molestias quaerat officia perspiciatis ab cumque quibusdam, dolorum non autem! Animi placeat quibusdam doloribus laborum distinctio veritatis architecto rem provident maiores corrupti, sint possimus at eaque eveniet beatae pariatur. Rerum, veritatis! Alias, quaerat necessitatibus blanditiis quas quia doloremque, beatae quae, nemo dolor deleniti numquam tempora.</p>
           </div>
 
           <div class="tab-pane fade" id="reviews" role="tabpanel"    aria-labelledby="reviews-tab">
-            <div class="reviewsCnt" style=" border-bottom: 2px solid #e1e1e17c;" data-aos="fade-up" data-aos-duration="2000">
+            <div class="reviewsCnt" style=" border-bottom: 2px solid #e1e1e17c;" data-aos="fade-up" data-aos-duration="1500">
               <div class="row">
                 <div class="cnt-reviews order-1 col-12 col-sm-12 col-md-6 col-lg-2">
                   <div class="customerImagesCnt">
@@ -524,7 +537,7 @@
   <section id="Releted-product">
     <div class="container">
       <h1>Releted Products</h1>
-      <div class="productSlider" data-aos="fade-up" data-aos-duration="2000">
+      <div class="productSlider" data-aos="fade-up" data-aos-duration="1500">
         <!-- product 1st -->
         <div class="slide">
           <img src="./asset/images/Shop-Grid/product-details/product (1).jpg" alt="">

@@ -571,28 +571,28 @@ $(function(){
 
 
     // Increment&Decrement js
-    $(".incrementBtn").click(function(e){
-        e.preventDefault();
-        var qty=$(this).closest('.product-data').find(".qutyInput").val();
+    $(".incrementBtn").click(function(event){
+        event.preventDefault();
+        var qty=$(this).closest('.quantity').find(".qutyInput").val();
         var value = parseInt(qty, 10);
         value = isNaN(value) ? 0 : value;
         
         if(value < 10){
             value++;
-            $(this).closest('.product-data').find(".qutyInput").val(value);
+            $(this).closest('.quantity').find(".qutyInput").val(value);
         }
               
     });
 
     $(".decrementBtn").click(function(e){
         e.preventDefault();
-        var qty=$(this).closest('.product-data').find(".qutyInput").val();
+        var qty=$(this).closest('.quantity').find(".qutyInput").val();
         var value = parseInt(qty, 10);
         value = isNaN(value) ? 0 : value;
         
         if(value > 1){
             value--;
-            $(this).closest('.product-data').find(".qutyInput").val(value);
+            $(this).closest('.quantity').find(".qutyInput").val(value);
         }
               
     });

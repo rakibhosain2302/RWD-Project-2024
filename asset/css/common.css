@@ -2166,8 +2166,9 @@ a{
 }
 
 
-.details-product .ColorSizeCnt{
-    padding-top: 30px;
+
+.details-product .fCnt a{
+    pointer-events: none;
 }
 
 .details-product .sizeCnt{
@@ -2208,30 +2209,47 @@ a{
 
 
 .details-product .CartHeartEye-Cnt .quantity .incrementBtn{
-    padding: 13px 18px;
+    padding: 13px 16px;
     font-size: 16px;
     border: 2px solid #b5b3b3da;
     background-color: transparent; 
-    margin-left: -6px;
+    margin-left: -2px;
+    color: #000;
+    transition: 0.45s;
 }
 
-.details-product .CartHeartEye-Cnt .quantity .qutyInput{
-    padding: 12px 0px;
-    font-size: 18px;
-    text-align: center;
-    border: 2px solid #b5b3b3da;
-    background-color: transparent;
-    font-weight: 600;
-    line-height: 1.5; 
-    margin-left: -6px;
+.details-product .CartHeartEye-Cnt .quantity .incrementBtn:hover{
+   color: #FF6F61;
+   transition: 0.45s;
 }
+
+
+.details-product .CartHeartEye-Cnt .quantity .qutyInput {
+    padding: 11.5px 0px;
+    font-size: 18px;
+    border: 2px solid #b5b3b3da;
+    font-weight: 600;
+    line-height: 40px;
+    margin-left: -2px;
+    padding-left: 15px;
+    color: #FF6F61;
+    width: 55px;
+    height: 54px;
+}
+
 
 .details-product .CartHeartEye-Cnt .quantity .decrementBtn {
-    padding: 13px 18px;
+    padding: 13px 16px;
     font-size: 16px;
     border: 2px solid #b5b3b3da;
     background-color: transparent;
+    color: #000;
 }
+
+.details-product .CartHeartEye-Cnt .quantity .decrementBtn:hover{
+    color: #FF6F61;
+    transition: 0.45s;
+ }
 
 .details-product .add-to-cart{
     display: block;
@@ -2500,7 +2518,7 @@ a{
 #Description-Review-Information #review-Form .reviewForm-cnt{
     margin-top: 60px;
     width: 100%;
-    height: 580px;
+    height: 450px;
     padding: 20px 50px;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
     border-radius: 8px;
@@ -2509,7 +2527,6 @@ a{
     font-size: 30px;
     font-family: var(--primary-Font);
     font-weight: 800;
-    padding-top: 60px;
 }
 
 #Description-Review-Information #review-Form .reviewForm-cnt .rating{
@@ -2659,7 +2676,7 @@ a{
 
 /* Releted product css starts */
 #Releted-product h1{
-    padding-top: 100px;
+    padding-top: 50px;
     color: var(--secendery-Color);
     text-align: center;
     font-family: var(--primary-Font);
@@ -2682,7 +2699,7 @@ a{
 }
 
 #Releted-product .productSlider .slide img:hover{
-    transform: scale(1.05);
+    transform: scale(1.02);
 }
 
 #Releted-product .productSlider .slide p{
@@ -2691,15 +2708,19 @@ a{
     left: 0;
     width: 80px;
     height: 26px;
+    margin-left: 6px;
     text-align: center;
     background-color: var(--primary-Color);
     color: var(--third-Color);
     font-family: var(--primary-Font);
 }
 
+
+
 #Releted-product .slide .productName{
-    text-align: left;
+    margin-top: 5px;
 }
+
 
 #Releted-product .slide .productName a{
     display: block;
@@ -2710,6 +2731,8 @@ a{
     font-weight: 600;
     line-height: 30px; /* 175% */
     transition: 0.45s; 
+    text-align: left;
+    margin-left: 8px;
 }
 
 #Releted-product .slide .productName h6{
@@ -2719,6 +2742,7 @@ a{
     font-style: normal;
     font-weight: 400;
     line-height: 26px; /* 162.5% */
+    margin-left: 8px;
 }
 
 #Releted-product .slide .productName a:hover{
@@ -2731,6 +2755,8 @@ a{
    line-height: 30px;
    font-size: 12px;
    margin-left: 15px;
+   margin-top: 5px;
+
 }
 
 
