@@ -37,7 +37,7 @@ This project is created for learning and practicing responsive web design (RWD).
 
 📸 Screenshots
 
-<img width="1900" height="957" style={margin-buttom: 20px;} alt="Aytor" src="https://github.com/user-attachments/assets/05a2e05f-52ab-43d2-9590-14ad41480995" />
+<img width="1900" height="957" alt="Aytor" src="https://github.com/user-attachments/assets/05a2e05f-52ab-43d2-9590-14ad41480995" />
 
 
 <img width="1906" height="957" alt="Screenshot from 2026-05-01 20-25-20" src="https://github.com/user-attachments/assets/12511dc3-cc01-4f9c-992c-ffb5d4b7901c" />
